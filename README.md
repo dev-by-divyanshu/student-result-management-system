@@ -1,128 +1,104 @@
-# 🏫 Student Result Management System (Python + CSV)
+# Student Result Management System
 
-A simple Python-based project that manages students, stores their marks, and automatically calculates *Total Marks, **Percentage, **Grade, and **CGPA*.  
-Data is stored using *CSV files*, making the project lightweight, portable, and perfect for beginners.
+A simple Python project to manage students using registration number, semester, and stream. It stores marks for five subjects, calculates total, percentage, grade, and CGPA, and saves all data in text files using a basic ‘|’ format. Easy, beginner-friendly, and ideal for first-year students.
 
 ---
 
-## ⭐ Features
-
-### 👨‍🎓 Student Management
-- Add student  
-- View all students  
-- Search student  
-- Update student  
-- Delete student  
-
-### 📝 Marks Management
-- Enter marks for *5 subjects*  
-- Update existing marks  
-- View marks of a student  
-- View all marks  
-
-### 📊 Result Management
+## 📌 Features
+- Add student using Registration Number
+- View all students
+- Enter marks for 5 subjects
+- View marks of a student
 - Calculate:
-  - Total Marks (out of 500)
+  - Total Marks
   - Percentage
-  - Grade (A+, A, B, C, D, F)
-  - CGPA (percentage / 9.5)
-- View result for one student  
-- View result summary for all students  
+  - Grade
+  - CGPA
+- Show result of a student
+- Show result of all students
 
 ---
 
-## 🗂 Project Structure
+## 📁 Project Structure
 
-main.py          - Main menu and navigation
-student.py       - Student CRUD operations
-marks.py         - Marks entry & view
-results.py       - Result calculation (Total, Percentage, Grade, CGPA)
-storage.py       - CSV read/write functions
-utils.py         - Validation and helper functions
-students.csv     - Auto-created student data
-marks.csv        - Auto-created marks data
-README.md        - Project documentation
-statement.md     - Problem statement & scope
+main.py      → Main menu and program flow                                                                                                                                                                           student.py   → Add student, view students                                                                                                                                                                    marks.py     → Enter and view marks                                                                                                                                                                                 result.py    → Result calculation and display                                                                                                                                                                     storage.py   → Simple text file read/write                                                                                                                                                                          students.txt → Stores registration number, name, semester, stream                                                                                                                                                 marks.txt    → Stores marks of 5 subjects
 
 ---
 
-## ⚙ Technologies Used
-- Python 3  
-- CSV File Storage  
-- Built-in Libraries: csv, os, time
+## 🧾 Student Data Format
+Stored in students.txt as:
+
+registration_number | name | semester | stream
+
+Example:
+
+101 | Rahul | 1st Semester | CSE
 
 ---
 
-## 🧠 Calculation Logic
+## 📝 Marks Data Format
+Stored in marks.txt as:
 
-### 🎓 Percentage
+registration_number | sub1 | sub2 | sub3 | sub4 | sub5
 
-percentage = total_marks / 5
+Example:
 
-### 🏆 Grade Criteria
-| Percentage | Grade |
-|-----------|--------|
-| ≥ 90      | A+     |
-| 80–89     | A      |
-| 70–79     | B      |
-| 60–69     | C      |
-| 50–59     | D      |
-| < 50      | F      |
-
-### 🎯 CGPA
-
-CGPA = percentage / 9.5
+101 | 85 | 90 | 78 | 88 | 92
 
 ---
 
-## ▶ How to Run the Project
-
-### Step 1: Install Python  
-Make sure Python 3 is installed.
-
-### Step 2: Open Terminal / CMD in Project Folder
-
-### Step 3: Run the Program
+## ▶ How to Run
+1. Keep all .py files in one folder.
+2. Open terminal / CMD in that folder.
+3. Run:
 
 python main.py
 
----
+The program will create:
+- students.txt
+- marks.txt
 
-## 📁 CSV Files Used
-
-### students.csv
-Stores:
-- Roll Number  
-- Name  
-- Class  
-- Section  
-
-### marks.csv
-Stores:
-- Roll Number  
-- Marks for 5 subjects  
-
-Both files are created automatically when the project runs.
+These store student and marks data permanently.
 
 ---
 
-## 🔍 Sample Output
+## 🧠 How Result is Calculated
 
-Result for Rohan Sharma (Roll: 102) Marks: 85, 76, 92, 88, 74 Total: 415 / 500 Percentage: 83.0% Grade: A CGPA: 8.73 / 10
+### ✔ Total
+
+total = sum of 5 subject marks
+
+### ✔ Percentage
+
+percentage = total / 5
+
+### ✔ Grade
+- A+ → 90 and above  
+- A  → 80–89  
+- B  → 70–79  
+- C  → 60–69  
+- D  → 50–59  
+- F  → below 50  
+
+### ✔ CGPA
+
+cgpa = percentage / 9.5
 
 ---
 
-## 🚀 Future Enhancements
-- Add GUI using Tkinter  
-- Store data in SQLite/MySQL  
-- Export results to PDF  
-- Create web version using Flask  
+## 🎯 Purpose of the Project
+- Practice basic Python  
+- Learn multi-file programs  
+- Understand simple file handling  
+- Create a working result management system  
+- Suitable for first-year B.Tech CSE submissions  
 
 ---
 
-## 👨‍💻 Author
-*Divyanshu Kumar*  
-VIT Bhopal University  
-Python – Build Your Own Project  
+## 👤 Author
+Divyanshu Kumar  
+B.Tech CSE – 1st Year  
+VIT Bhopal University
+
 
 ---
