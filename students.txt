@@ -1,0 +1,7 @@
+2501|Divyanshu kumar|1st year|cse
+python -u "c:\Users\dk443\OneDrive\Desktop\student result management system\student.py"|dev|1st|python -u "c:\Users\dk443\OneDrive\Desktop\student result management system\main.py"
+25bce10233|Divyanshu kumar|1st sem|cse
+25BCE11092|AJAY|1ST|CSE
+25BCE11234|SHUBHAM|1ST|CSE
+25BCE10345|RAHUL KUMAR|1ST |CSE
+25BCE10212|GAUTAM |1ST |CSE
